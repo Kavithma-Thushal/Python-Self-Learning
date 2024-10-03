@@ -1,33 +1,22 @@
-# 🌟 Simple POS - Python 🌟
+# 🌟 Python Self Learning 🌟
 
-The Simple POS project is a robust and efficient system designed to support a Point of Sale (POS) application. Built
-with Python, this project provides essential functionalities for managing customer details, item details, and order
-processing,
-with both frontend and backend components.
+Welcome to the Python Self-Learning project! This educational resource is designed to help you understand Python
+programming more thoroughly.
 
 ## 🛠️ Tech Stack
 
-### 🔥 FrontEnd
-
-✅ **HTML**<br/>
-✅ **CSS**<br/>
-✅ **JS**<br/>
-✅ **AJAX**<br/>
-✅ **JQuery**<br/>
-✅ **Bootstrap**<br/>
-✅ **Flask/Jinja**<br/>
-
-### 🔥 BackEnd
-
-✅ **Python (Flask/Django)**<br/>
+✅ **Python**<br/>
 ✅ **MySQL**<br/>
 
-## 🚀 Features
+## 🚀 Learning Objectives
 
-✅ Manage Customers<br/>
-✅ Manage Items<br/>
-✅ Place Orders<br/>
-✅ View Order Details<br/>
+✅ Grasping Python basics and advanced topics.<br/>  
+✅ Understanding object-oriented programming in Python.<br/>  
+✅ Learning data handling with NumPy and Pandas.<br/>  
+✅ Creating visualizations with Matplotlib.<br/>  
+✅ Building web applications with Flask and Django.<br/>  
+✅ Developing and deploying applications using Docker containers.<br/>  
+✅ Utilizing Jupyter Notebooks for interactive coding sessions.<br/>
 
 ## 📝 Version
 
@@ -41,7 +30,7 @@ If you encounter any issues, have questions, or need assistance with the code, f
 
 <div align="center">
 
-#### This project is licensed under the [Apache License](LICENSE)
+#### This project is licensed under the [GNU License](LICENSE)
 
 #### © 2024 All Rights Reserved | Designed by [Kavithma Thushal](https://github.com/Kavithma-Thushal)
 
