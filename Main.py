@@ -1,4 +1,20 @@
 import tkinter as tk
+import mysql.connector
+from mysql.connector import Error
+
+
+def connect_to_db():
+    try:
+        connection = mysql.connector.connect(
+            host='localhost',
+            user='root',
+            password='1234',
+            database='demo'
+        )
+        return connection
+    except Error as e:
+        print(f"Error connecting to MySQL database: {e}")
+        return None
 
 
 def save_customer():
@@ -8,8 +24,23 @@ def save_customer():
         "Address": address_entry.get(),
         "Salary": salary_entry.get()
     }
-    for key, value in customer_data.items():
-        print(f"{key}: {value}")
+
+    connection = connect_to_db()
+    if connection is not None:
+        cursor = connection.cursor()
+        query = """INSERT INTO customers (id, name, address, salary) VALUES (%s, %s, %s, %s)"""
+        try:
+            cursor.execute(query, (
+                customer_data["ID"], customer_data["Name"], customer_data["Address"], customer_data["Salary"]))
+            connection.commit()
+            print("Customer saved successfully!")
+        except Error as e:
+            print(f"Failed to insert data into MySQL table: {e}")
+        finally:
+            cursor.close()
+            connection.close()
+    else:
+        print("Connection to database failed!")
 
 
 def create_labeled_entry(parent, label, row, column=0, padx=10, pady=10, sticky="e"):
