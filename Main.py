@@ -2,43 +2,33 @@ import tkinter as tk
 
 
 def save_customer():
-    id_data = id_entry.get()
-    name_data = name_entry.get()
-    address_data = address_entry.get()
-    salary_data = salary_entry.get()
-
-    # Printing data to the console
-    print(f"ID: {id_data}")
-    print(f"Name: {name_data}")
-    print(f"Address: {address_data}")
-    print(f"Salary: {salary_data}")
+    customer_data = {
+        "ID": id_entry.get(),
+        "Name": name_entry.get(),
+        "Address": address_entry.get(),
+        "Salary": salary_entry.get()
+    }
+    for key, value in customer_data.items():
+        print(f"{key}: {value}")
 
 
-# Create the main window
+def create_labeled_entry(parent, label, row, column=0, padx=10, pady=10, sticky="e"):
+    tk.Label(parent, text=f"{label}:").grid(row=row, column=column, sticky=sticky)
+    entry = tk.Entry(parent)
+    entry.grid(row=row, column=column + 1, padx=padx, pady=pady)
+    return entry
+
+
 root = tk.Tk()
 root.title("Customer Management")
 root.geometry("200x200")
 
-# Create and place labels and entry widgets for each field
-tk.Label(root, text="ID:").grid(row=0, column=0, sticky="e")
-id_entry = tk.Entry(root)
-id_entry.grid(row=0, column=1, padx=10, pady=10)
+id_entry = create_labeled_entry(root, "ID", 0)
+name_entry = create_labeled_entry(root, "Name", 1)
+address_entry = create_labeled_entry(root, "Address", 2)
+salary_entry = create_labeled_entry(root, "Salary", 3)
 
-tk.Label(root, text="Name:").grid(row=1, column=0, sticky="e")
-name_entry = tk.Entry(root)
-name_entry.grid(row=1, column=1, padx=10, pady=10)
-
-tk.Label(root, text="Address:").grid(row=2, column=0, sticky="e")
-address_entry = tk.Entry(root)
-address_entry.grid(row=2, column=1, padx=10, pady=10)
-
-tk.Label(root, text="Salary:").grid(row=3, column=0, sticky="e")
-salary_entry = tk.Entry(root)
-salary_entry.grid(row=3, column=1, padx=10, pady=10)
-
-# Create and place the save button
 save_button = tk.Button(root, text="Save", command=save_customer)
 save_button.grid(row=4, column=1, pady=10)
 
-# Start the event loop
 root.mainloop()
