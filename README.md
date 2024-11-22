@@ -1,7 +1,7 @@
 # 🌟 Python Self Learning 🌟
 
 Welcome to the Python Self-Learning project! This educational resource is designed to help you understand Python
-programming more thoroughly.
+programming more thoroughly
 
 ## 🛠️ Tech Stack
 
