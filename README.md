@@ -5,17 +5,16 @@ programming more thoroughly.
 
 ## 🛠️ Tech Stack
 
-✅ **Python**<br/>
-✅ **MySQL**<br/>
+✅ Python<br/>
+✅ MySQL<br/>
 
 ## 🚀 Learning Objectives
 
-✅ Grasping Python basics and advanced topics.<br/>  
-✅ Understanding object-oriented programming in Python.<br/>  
-✅ Learning data handling with NumPy and Pandas.<br/>  
-✅ Creating visualizations with Matplotlib.<br/>  
-✅ Building web applications with Flask and Django.<br/>  
-✅ Developing and deploying applications using Docker containers.<br/>  
+✅ Grasping Python basics and advanced topics.<br/>
+✅ Understanding object-oriented programming in Python.<br/>
+✅ Creating visualizations with Matplotlib.<br/>
+✅ Building web applications with Flask and Django.<br/>
+✅ Developing and deploying applications using Docker containers.<br/>
 ✅ Utilizing Jupyter Notebooks for interactive coding sessions.<br/>
 
 ## 📝 Version
